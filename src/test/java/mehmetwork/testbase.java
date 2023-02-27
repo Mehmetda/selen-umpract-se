@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class testbase {
-    static WebDriver driver;
+    public  static WebDriver driver;
     @BeforeClass
     public static void setup(){
         WebDriverManager.chromedriver().setup();
@@ -26,7 +26,7 @@ public class testbase {
         try {
             Thread.sleep(sayı);
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+
         }
     }
 }
